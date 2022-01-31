@@ -1,4 +1,6 @@
 @import "config/colors";
+@import "config/fonts";
+@import "components/buttons";
 
 * {
   box-sizing: border-box;
@@ -8,6 +10,7 @@
 
 .container {
   margin: 0 auto;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(3);
@@ -18,29 +21,43 @@
   max-width: 990px;
   padding-left: 16px;
   padding-right: 16px;
-}
-
-@media(max-width: 931px) {
-  .container {
+  @media(max-width: 931px) {
     grid-template-columns: 1fr;
     max-width: 330px;
     padding-left: 8px;
     padding-right: 8px;
-  }
-
-  .card .orange {
-    border-radius: 8px 8px 0px 0px;
   }
 }
 
 .card-orange {
   background-color: $orange-color;
   border-radius: 8px 0px 0px 8px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  @media(max-width: 931px) {
+    border-radius: 8px 8px 0px 0px;
+  }
 }
 .card-cyan {
   background-color: $cyan-color;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 .card-dark-cyan {
   background-color: $dark-cyan-color;
   border-radius: 0px 8px 8px 0px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  @media(max-width: 931px) {
+    border-radius: 0px 0px 8px 8px;
+  }
 }
