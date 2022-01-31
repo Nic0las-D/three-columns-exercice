@@ -20,10 +20,6 @@
   padding-right: 16px;
 }
 
-.card {
-  height: 100px;
-}
-
 @media(max-width: 931px) {
   .container {
     grid-template-columns: 1fr;
@@ -32,21 +28,27 @@
     padding-right: 8px;
   }
 
-  .card .orange {
+  .card-orange {
     border-radius: 8px 8px 0px 0px;
   }
+
+  .card-dar-cyan {
+    border-radius: 0px;
+  }
+
+
 }
 
-.orange {
+.card-orange {
   background-color: $orange-color;
   border-radius: 8px 0px 0px 8px;
 }
 
-.cyan {
+.card-cyan {
   background-color: $cyan-color;
 }
 
-.dark-cyan {
+.card-dark-cyan {
   background-color: $dark-cyan-color;
   border-radius: 0px 8px 8px 0px;
 }
